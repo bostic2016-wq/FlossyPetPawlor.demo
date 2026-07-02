@@ -421,149 +421,8 @@ h2 {
 
 .experience {
   padding: 4.5rem 0;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-}
-
-.experience-grid {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.experience-card {
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 1.75rem;
 }
-
-.experience-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.experience-card p {
-  color: var(--muted);
-  margin: 0 0 1rem;
-  font-size: 0.98rem;
-}
-
-.text-link {
-  color: var(--accent-dark);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 0.92rem;
-}
-
-.text-link:hover { text-decoration: underline; }
-
-/* ── Daycare & boarding ───────────────────────────── */
-
-.daycare-boarding {
-  padding: 4.5rem 0;
-  background: var(--surface);
-}
-
-.stay-grid {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.stay-card {
-  position: relative;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 2rem 1.75rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.stay-card-featured {
-  border-color: var(--accent);
-  background: linear-gradient(160deg, #fff 0%, var(--accent-soft) 100%);
-}
-
-.stay-icon {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 12px;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-}
-
-.stay-icon svg { width: 1.4rem; height: 1.4rem; }
-
-.stay-card p {
-  color: var(--muted);
-  margin: 0 0 1.25rem;
-}
-
-.stay-note {
-  margin: 2rem 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-.stay-note a {
-  color: var(--accent-dark);
-  font-weight: 600;
-}
-
-/* ── Values ─────────────────────────────────────────── */
-
-.values {
-  padding: 4.5rem 0;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(255,255,255,0.04) 0,
-      rgba(255,255,255,0.04) 20px,
-      transparent 20px,
-      transparent 40px
-    ),
-    linear-gradient(135deg, var(--accent-dark) 0%, var(--navy) 100%);
-}
-
-.values-grid {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.value-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-lg);
-  padding: 1.75rem;
-  color: rgba(255, 255, 255, 0.88);
-}
-
-.value-card h3 {
-  color: #fff;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-}
-
-.value-card p {
-  margin: 0;
-  font-size: 0.98rem;
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.values-tag {
-  text-align: center;
-  margin: 2.5rem 0 0;
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.35rem;
-  color: var(--accent-bright);
-  letter-spacing: 0.02em;
-}
-
 
 .gallery {
   padding: 4.5rem 0;
@@ -688,6 +547,40 @@ h2 {
   color: var(--muted);
   margin: 0;
   font-size: 0.98rem;
+}
+
+.card-cta { margin-top: 1.25rem; }
+
+.card-grid-2 {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+/* ── Daycare & boarding ───────────────────────────── */
+
+.daycare-boarding {
+  padding: 4.5rem 0;
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+.stay-note {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.stay-note a {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* ── Values ─────────────────────────────────────────── */
+
+.values {
+  padding: 4.5rem 0;
+  background: var(--bg);
 }
 
 .services-extra {
@@ -1103,9 +996,7 @@ h2 {
   .review-grid { grid-template-columns: repeat(3, 1fr); }
   .bento { grid-template-columns: 1.2fr 1fr 1fr; grid-template-rows: auto auto; }
   .card-grid { grid-template-columns: repeat(3, 1fr); }
-  .experience-grid { grid-template-columns: repeat(3, 1fr); }
-  .stay-grid { grid-template-columns: repeat(2, 1fr); }
-  .values-grid { grid-template-columns: repeat(3, 1fr); }
+  .card-grid-2 { grid-template-columns: repeat(2, 1fr); }
   .how-split { grid-template-columns: 0.9fr 1.1fr; align-items: center; }
   .faq-grid { grid-template-columns: 0.85fr 1.15fr; }
   .visit-grid { grid-template-columns: 0.45fr 0.55fr; min-height: 380px; }
