@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
   <!--
-    ══════════════════════════════════════════════════════════════
     FLOSSY PET PAWLOR — EDITABLE FACTS
-    All business facts live here and are referenced below.
-    To update prices, hours, or contact info, search for the
-    value in this file and change it everywhere it appears.
-
-    Business name:  Flossy Pet Pawlor
-    Address:        100 Prince St, Brooklyn, NY 11201
-    Phone:          (347) 335-0142  →  tel:+13473350142
-    Hours:          Daily 8:00 AM – 6:00 PM
-    Rating:         4.9 stars · 129 Google reviews
-    Booking URL:    https://flossypetpawlor.square.site
-    Prices:         Bath & Brush from $55 · Full Groom from $75
-                    Puppy's First Groom from $45
-    ══════════════════════════════════════════════════════════════
+    Business:  Flossy Pet Pawlor
+    Address:  100 Prince St, Brooklyn, NY 11201
+    Phone:    (347) 335-0142  →  tel:+13473350142
+    Hours:    Daily 8:00 AM – 6:00 PM
+    Rating:   4.9 · 129 Google reviews
+    Booking:  https://flossypetpawlor.square.site
+    Prices:   Bath & Brush $55 · Full Groom $75 · Puppy First $45
   -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dog Grooming in Brooklyn | Flossy Pet Pawlor</title>
   <meta name="description" content="Brooklyn's most-loved dog grooming — 4.9 stars across 129 Google reviews. Grooming, daycare, and boarding at 100 Prince St. Book online or call (347) 335-0142.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -54,17 +50,25 @@
     "priceRange": "$$"
   }
   </script>
-
-  <!-- Analytics: uncomment and set the site code when live.
-  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  -->
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top">Flossy Pet Pawlor</a>
+      <a class="logo" href="#top">
+        <span class="logo-flossy">Flossy</span>
+        <span class="logo-pet">Pet</span>
+        <span class="logo-pawlor">Pawlor</span>
+      </a>
+      <nav class="header-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
       <div class="header-actions">
-        <a class="header-phone" href="tel:+13473350142">(347) 335-0142</a>
+        <a class="header-phone" href="tel:+13473350142">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (347) 335-0142
+        </a>
         <a class="btn btn-primary btn-sm" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book online</a>
       </div>
     </div>
@@ -72,139 +76,232 @@
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid reveal">
         <div class="hero-copy">
           <p class="eyebrow">Grooming · Daycare · Boarding — Brooklyn, NY</p>
-          <h1>Brooklyn's most-loved groom.</h1>
-          <p class="lead">129 five-star reviews and counting. Gentle, unhurried grooming at 100 Prince St — book online in under a minute, or just give us a call.</p>
+          <h1>Where every pup leaves <em>flossy.</em></h1>
+          <p class="lead">129 five-star Google reviews. A boutique salon at 100 Prince St with the blue-striped walls, neon sign, and groomers your dog will actually pull you toward.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book an appointment</a>
-            <a class="btn btn-ghost" href="tel:+13473350142">Call (347) 335-0142</a>
+            <a class="btn btn-primary btn-lg" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book an appointment</a>
+            <a class="btn btn-ghost btn-lg" href="tel:+13473350142">Call now</a>
           </div>
-          <a class="trust-strip" href="https://www.google.com/search?q=Flossy+Pet+Pawlor+Brooklyn" target="_blank" rel="noopener">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <strong>4.9</strong> · 129 Google reviews · Open daily 8am–6pm
-          </a>
         </div>
-        <div class="hero-photo">
-          <img src="images/salon-neon-sign.webp" alt="Freshly groomed doodle in front of the neon Flossy sign at the salon" loading="eager">
+        <div class="hero-visual">
+          <figure class="hero-main">
+            <img src="images/salon-neon-sign.webp" alt="Groomed dog at the Flossy neon sign" loading="eager">
+          </figure>
+          <figure class="hero-accent">
+            <img src="images/reception.webp" alt="Flossy Pet Pawlor reception desk" loading="eager">
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="reviews">
+    <div class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat">
+          <strong>4.9</strong>
+          <span>Google rating</span>
+        </div>
+        <div class="stat">
+          <strong>129+</strong>
+          <span>Five-star reviews</span>
+        </div>
+        <div class="stat">
+          <strong>8am–6pm</strong>
+          <span>Open every day</span>
+        </div>
+        <div class="stat">
+          <strong>100 Prince St</strong>
+          <span>Brooklyn, NY</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="reviews reveal">
       <div class="container">
-        <h2>What Brooklyn dog owners say</h2>
+        <div class="section-head section-head-light">
+          <p class="eyebrow">Real reviews</p>
+          <h2>Brooklyn dog owners don't hold back.</h2>
+        </div>
         <div class="review-grid">
-          <blockquote>
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
             <p>"Excellent service and kind, friendly owner and staff."</p>
-            <footer>— Genia Lear Morgan, Google review</footer>
+            <footer>Genia Lear Morgan · Google</footer>
           </blockquote>
-          <blockquote>
+          <blockquote class="review-card review-card-featured">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
             <p>"The best place to bring your dog for grooming; and that is an understatement!"</p>
-            <footer>— Greg R., Google review</footer>
+            <footer>Greg R. · Google</footer>
           </blockquote>
-          <blockquote>
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
             <p>"Top tier quality efficient work. Great customer service — such a great experience."</p>
-            <footer>— James Sessoms, Google review</footer>
+            <footer>James Sessoms · Google</footer>
           </blockquote>
         </div>
         <a class="review-link" href="https://www.google.com/search?q=Flossy+Pet+Pawlor+Brooklyn" target="_blank" rel="noopener">Read all 129 reviews on Google →</a>
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery reveal" id="gallery">
       <div class="container">
-        <h2>Fresh from the tub</h2>
-        <p class="section-lead">Real pups, real grooms — straight from the salon at 100 Prince St.</p>
-        <div class="gallery-grid">
-          <img src="images/groom-goldendoodle.webp" alt="Goldendoodle with a fresh face trim" loading="lazy">
-          <img src="images/groom-poodle.webp" alt="Grey poodle in a tie-dye bandana after grooming" loading="lazy">
-          <img src="images/groom-bichon.webp" alt="Bichon with a rounded teddy-bear cut" loading="lazy">
-          <img src="images/daycare-room.webp" alt="The blue-and-white daycare playroom" loading="lazy">
+        <div class="section-head">
+          <p class="eyebrow">The salon</p>
+          <h2>Fresh from the tub.</h2>
+          <p class="section-lead">Real grooms, real space — the blue-striped room your dog gets to hang out in.</p>
+        </div>
+        <div class="bento">
+          <button type="button" class="bento-item bento-large" data-lightbox="images/groom-goldendoodle.webp" data-caption="Goldendoodle — fresh face trim">
+            <img src="images/groom-goldendoodle.webp" alt="Goldendoodle with a fresh face trim" loading="lazy">
+            <span class="bento-zoom">View</span>
+          </button>
+          <button type="button" class="bento-item" data-lightbox="images/groom-poodle.webp" data-caption="Poodle — tie-dye bandana finish">
+            <img src="images/groom-poodle.webp" alt="Grey poodle after grooming" loading="lazy">
+            <span class="bento-zoom">View</span>
+          </button>
+          <button type="button" class="bento-item" data-lightbox="images/groom-bichon.webp" data-caption="Bichon — teddy bear cut">
+            <img src="images/groom-bichon.webp" alt="Bichon with teddy bear cut" loading="lazy">
+            <span class="bento-zoom">View</span>
+          </button>
+          <button type="button" class="bento-item bento-wide" data-lightbox="images/daycare-room.webp" data-caption="Daycare playroom — blue & white stripes">
+            <img src="images/daycare-room.webp" alt="Blue and white daycare playroom" loading="lazy">
+            <span class="bento-zoom">View</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="services reveal" id="services">
       <div class="container">
-        <h2>Services &amp; prices</h2>
-        <p class="section-lead">Straightforward pricing. Final quote confirmed when you book — it depends on your dog's size and coat.</p>
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2>Services &amp; prices</h2>
+          <p class="section-lead">Straightforward rates — final quote at booking based on size and coat.</p>
+        </div>
         <div class="card-grid">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3c-1.5 2-4 3.5-4 7a4 4 0 0 0 8 0c0-3.5-2.5-5-4-7z"/><path d="M8 21c0-3 1.5-5 4-5s4 2 4 5"/></svg>
+            </div>
             <h3>Bath &amp; Brush</h3>
             <p class="price">from $55</p>
-            <p>Bath, blow-dry, brush-out, nail trim, and ear clean. Perfect between full grooms.</p>
+            <p>Bath, blow-dry, brush-out, nail trim, ear clean. Perfect between full grooms.</p>
           </article>
           <article class="card card-featured">
             <span class="badge">Most popular</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><path d="M6 8v2a6 6 0 0 0 12 0V8"/></svg>
+            </div>
             <h3>Full Groom</h3>
             <p class="price">from $75</p>
-            <p>Everything in Bath &amp; Brush plus a breed-appropriate haircut and finishing touches.</p>
+            <p>Everything in Bath &amp; Brush plus breed-appropriate cut and finishing touches.</p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 10c-2 0-3.5 1.5-3.5 3.5S10 17 12 17s3.5-1.5 3.5-3.5S14 10 12 10z"/><path d="M19 8c0-2-1.5-3.5-3.5-3.5"/><path d="M5 8c0-2 1.5-3.5 3.5-3.5"/></svg>
+            </div>
             <h3>Puppy's First Groom</h3>
             <p class="price">from $45</p>
-            <p>A short, gentle introduction for pups under 6 months — building good habits early.</p>
+            <p>Gentle intro for pups under 6 months — building confidence early.</p>
           </article>
         </div>
-        <p class="services-extra">Also offering <strong>daycare</strong> and <strong>overnight boarding</strong> — <a href="tel:+13473350142">call for details and availability</a>.</p>
+        <div class="services-extra">
+          <div class="extra-pill">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            Also offering <strong>daycare</strong> &amp; <strong>overnight boarding</strong>
+          </div>
+          <a class="btn btn-ghost" href="tel:+13473350142">Call for availability</a>
+        </div>
       </div>
     </section>
 
-    <section class="how">
-      <div class="container">
-        <h2>How it works</h2>
+    <section class="how reveal">
+      <div class="container how-split">
+        <div class="how-copy">
+          <p class="eyebrow">Simple process</p>
+          <h2>Book, drop off, pick up a happy pup.</h2>
+          <p class="section-lead">Booking runs through Square — instant confirmation, automatic reminders, no phone tag.</p>
+        </div>
         <ol class="steps">
           <li>
-            <strong>Book online or call</strong>
-            <span>Pick a time that works — booking runs through Square, and you'll get an instant confirmation.</span>
+            <span class="step-num">1</span>
+            <div>
+              <strong>Book online or call</strong>
+              <span>Pick a slot that works. Confirmation hits your phone immediately.</span>
+            </div>
           </li>
           <li>
-            <strong>Drop off at 100 Prince St</strong>
-            <span>Tell us anything we should know about your dog. Most grooms take 1–2 hours.</span>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Drop off at 100 Prince St</strong>
+              <span>Tell us about your dog. Most grooms take 1–2 hours.</span>
+            </div>
           </li>
           <li>
-            <strong>We text when they're ready</strong>
-            <span>Pick up a fresh, happy pup. Automatic reminders for your next visit.</span>
+            <span class="step-num">3</span>
+            <div>
+              <strong>We text when they're ready</strong>
+              <span>Pick up a fresh, happy pup. Reminders for next time included.</span>
+            </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="faq">
-      <div class="container">
-        <h2>Common questions</h2>
-        <details>
-          <summary>Do you groom anxious or senior dogs?</summary>
-          <p>Yes. We work at your dog's pace — no cages stacked in a loud room, no rushing. Tell us about your dog when you book and we'll plan extra time.</p>
-        </details>
-        <details>
-          <summary>My dog's coat is matted — is that a problem?</summary>
-          <p>Bring them in. We'll assess the coat honestly and talk you through options before we start. Severe matting may affect the price, and we'll always confirm first.</p>
-        </details>
-        <details>
-          <summary>What if I need to cancel or reschedule?</summary>
-          <p>Life happens — just let us know at least 24 hours ahead through your booking confirmation or by phone, and we'll move you free of charge.</p>
-        </details>
-        <details>
-          <summary>Do you take walk-ins?</summary>
-          <p>When we can! Appointments get priority, so booking ahead is the safest bet — especially weekends.</p>
-        </details>
+    <section class="faq reveal">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions we hear a lot.</h2>
+          <p class="section-lead">Anxious dogs, matted coats, schedule changes — we've got you.</p>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Do you groom anxious or senior dogs?</summary>
+            <p>Yes — we work at your dog's pace. No stacked cages, no rushing. Tell us when you book and we'll plan extra time.</p>
+          </details>
+          <details>
+            <summary>My dog's coat is matted — is that a problem?</summary>
+            <p>Bring them in. We'll assess honestly and talk through options before we start. Price confirmed upfront.</p>
+          </details>
+          <details>
+            <summary>What if I need to cancel or reschedule?</summary>
+            <p>24+ hours notice via your booking confirmation or phone — we'll move you free of charge.</p>
+          </details>
+          <details>
+            <summary>Do you take walk-ins?</summary>
+            <p>When we can. Appointments get priority — especially weekends. Book ahead to be safe.</p>
+          </details>
+        </div>
       </div>
     </section>
 
-    <section class="visit" id="visit">
+    <section class="visit reveal" id="visit">
       <div class="container visit-grid">
-        <div class="visit-info">
-          <h2>Visit us</h2>
-          <address>
-            <strong>Flossy Pet Pawlor</strong><br>
-            100 Prince St, Brooklyn, NY 11201
-          </address>
-          <p class="hours">Open daily · 8:00 AM – 6:00 PM</p>
-          <p><a href="tel:+13473350142">(347) 335-0142</a></p>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=100+Prince+St+Brooklyn+NY+11201" target="_blank" rel="noopener">Get directions</a>
+        <div class="visit-card">
+          <p class="eyebrow">Find us</p>
+          <h2>Visit the Pawlor</h2>
+          <ul class="visit-details">
+            <li>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>100 Prince St, Brooklyn, NY 11201</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Open daily · 8:00 AM – 6:00 PM</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+13473350142">(347) 335-0142</a>
+            </li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn btn-primary" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book online</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=100+Prince+St+Brooklyn+NY+11201" target="_blank" rel="noopener">Get directions</a>
+          </div>
         </div>
         <div class="visit-map">
           <iframe
@@ -217,30 +314,54 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta reveal">
       <div class="container cta-inner">
         <h2>Ready for a five-star groom?</h2>
-        <p>Book online through Square — instant confirmation, automatic reminders. Or call and we'll set you up.</p>
+        <p>129 reviews can't be wrong. Book through Square — instant confirmation, automatic reminders.</p>
         <div class="hero-actions cta-actions">
-          <a class="btn btn-primary" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book an appointment</a>
-          <a class="btn btn-ghost" href="tel:+13473350142">Call (347) 335-0142</a>
+          <a class="btn btn-white btn-lg" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book an appointment</a>
+          <a class="btn btn-outline-white btn-lg" href="tel:+13473350142">Call (347) 335-0142</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p><strong>Flossy Pet Pawlor</strong> · 100 Prince St, Brooklyn, NY 11201 · Open daily 8am–6pm</p>
-      <p><a href="tel:+13473350142">(347) 335-0142</a> · <a href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book online</a></p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-flossy">Flossy</span>
+        <span class="logo-pawlor">Pawlor</span>
+        <p>Boutique grooming, daycare &amp; boarding in Brooklyn.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Visit</strong>
+        <p>100 Prince St, Brooklyn NY 11201</p>
+        <p>Daily · 8am–6pm</p>
+      </div>
+      <div class="footer-links">
+        <strong>Book</strong>
+        <p><a href="tel:+13473350142">(347) 335-0142</a></p>
+        <p><a href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book online</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
       <p class="demo-note">Demo site built as a concept pitch — not affiliated with Flossy Pet Pawlor.</p>
     </div>
   </footer>
 
-  <!-- Sticky mobile action bar: call + book always one thumb away -->
   <nav class="mobile-bar" aria-label="Quick actions">
-    <a class="mobile-bar-call" href="tel:+13473350142">Call now</a>
+    <a class="mobile-bar-call" href="tel:+13473350142">Call</a>
     <a class="mobile-bar-book" href="https://flossypetpawlor.square.site" target="_blank" rel="noopener">Book online</a>
   </nav>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
