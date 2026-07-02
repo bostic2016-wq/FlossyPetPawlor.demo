@@ -1,0 +1,545 @@
+/* Brand palette matched to the salon's real interior:
+   sky-blue reception desk, blue/white striped walls, neon FLOSSY sign */
+:root {
+  --bg: #f5fafd;
+  --surface: #ffffff;
+  --text: #16283a;
+  --muted: #52677a;
+  --accent: #2b96dd;
+  --accent-dark: #1f75b3;
+  --accent-soft: #e1f1fb;
+  --border: #d8e7f2;
+  --radius: 14px;
+  --shadow: 0 12px 40px rgba(22, 40, 58, 0.1);
+  --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  /* Space for the sticky mobile bar */
+  padding-bottom: 4.5rem;
+}
+
+.container {
+  width: min(1080px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+a {
+  color: inherit;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(253, 249, 244, 0.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-phone {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent-dark);
+}
+
+/* ── Buttons ────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1.5px solid var(--border);
+}
+
+.btn-sm {
+  padding: 0.55rem 1rem;
+  font-size: 0.92rem;
+}
+
+/* ── Hero ───────────────────────────────────────────── */
+
+.hero {
+  padding: 3.5rem 0 3rem;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--accent-dark);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.75rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.lead,
+.section-lead {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 52ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.trust-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+
+.trust-strip:hover {
+  border-color: var(--accent);
+}
+
+.stars {
+  color: #e8a33d;
+  letter-spacing: 0.1em;
+}
+
+.trust-strip strong {
+  color: var(--text);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* ── Gallery ────────────────────────────────────────── */
+
+.gallery {
+  padding: 3.5rem 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* ── Reviews ────────────────────────────────────────── */
+
+.reviews {
+  padding: 3rem 0;
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+.review-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+blockquote {
+  margin: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+blockquote footer {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.review-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.review-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Services ───────────────────────────────────────── */
+
+.services,
+.how,
+.faq,
+.visit {
+  padding: 3.5rem 0;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.card-featured {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.73rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.services-extra {
+  margin-top: 1.75rem;
+  color: var(--muted);
+}
+
+.services-extra a {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* ── How it works ───────────────────────────────────── */
+
+.how {
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+.steps {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.steps li {
+  counter-increment: step;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem 1.25rem 3.4rem;
+  position: relative;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 1.1rem;
+  top: 1.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.steps span {
+  color: var(--muted);
+}
+
+/* ── FAQ ────────────────────────────────────────────── */
+
+details {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+details:last-of-type {
+  border-bottom: 1px solid var(--border);
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details p {
+  color: var(--muted);
+  margin: 0.75rem 0 0;
+}
+
+/* ── Visit / map ────────────────────────────────────── */
+
+.visit {
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+.visit-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+address {
+  font-style: normal;
+  margin: 0 0 0.75rem;
+}
+
+.hours {
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+
+.visit-info .btn {
+  margin-top: 1rem;
+}
+
+.visit-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* ── Closing CTA ────────────────────────────────────── */
+
+.cta {
+  padding: 3.5rem 0;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--accent-soft) 100%);
+  text-align: center;
+}
+
+.cta p {
+  color: var(--muted);
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+.cta-actions {
+  justify-content: center;
+}
+
+/* ── Footer ─────────────────────────────────────────── */
+
+.site-footer {
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.demo-note {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* ── Sticky mobile action bar ───────────────────────── */
+
+.mobile-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 -6px 24px rgba(36, 28, 23, 0.1);
+}
+
+.mobile-bar a {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mobile-bar-call {
+  color: var(--accent-dark);
+}
+
+.mobile-bar-book {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  /* Sticky bottom bar already handles calling on small screens */
+  .header-phone {
+    display: none;
+  }
+}
+
+/* ── Desktop ────────────────────────────────────────── */
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .mobile-bar {
+    display: none;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+
+  .hero-photo {
+    min-height: 360px;
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .visit-grid {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+}
